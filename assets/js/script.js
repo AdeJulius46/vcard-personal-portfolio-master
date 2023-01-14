@@ -1,6 +1,24 @@
 'use strict';
 
 
+const darkmode=document.getElementById("darkmode")
+ darkmode.addEventListener("click",julius)
+  
+  function julius(){
+    document.body.classList.toggle("white");
+    if(document.body.classList.contains("white")){
+      darkmode.innerText="Dark"
+
+    }
+    else{
+    darkmode.innerText="Light"
+    }
+
+  }
+
+
+
+
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }

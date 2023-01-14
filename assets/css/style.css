@@ -69,6 +69,12 @@
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
+
+
+
+
+
+  
   /**
    * typography
    */
@@ -111,6 +117,70 @@
 
 }
 
+.white{
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(240, 38%, 94%) 3%, 
+    hsl(0, 52%, 94%) 97%
+  );
+  --bg-gradient-jet: linear-gradient(
+    to bottom right, 
+    hsla(240, 13%, 82%, 0.251) 0%, 
+    hsla(197, 33%, 96%, 0.96) 100%
+  ), hsl(240, 12%, 97%);
+  --bg-gradient-yellow-1: linear-gradient(
+    to bottom right, 
+    hsl(45, 100%, 71%) 0%, 
+    hsl(0, 52%, 94%) 50%
+  );
+  --bg-gradient-yellow-2: linear-gradient(
+    135deg, 
+    hsla(45, 100%, 71%, 0.251) 0%, 
+    hsl(40, 33%, 98%) 59.86%
+  ), hsl(0, 52%, 94%);
+  --border-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(0, 0%, 25%) 0%, 
+    hsl(0, 52%, 94%) 50%
+  );
+  --text-gradient-yellow: linear-gradient(
+    to right, 
+    hsl(45, 100%, 72%), 
+    hsl(35, 100%, 68%)
+  );
+
+  /* solid */
+
+ --jet: hsl(0, 0%, 22%);
+  --onyx: hsl(240, 25%, 94%);
+  --eerie-black-1: hsl(240, 43%, 97%);
+  --eerie-black-2: hsl(240, 25%, 94%);
+  --smoky-black: hsl(0, 0%, 100%);
+  --white-1: hsl(0, 0%, 5%);
+  --white-2: hsl(0, 20%, 3%);
+  --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --vegas-gold: hsl(30, 8%, 5%);
+  --light-gray: hsl(0, 85%, 5%);
+  --light-gray-70: hsla(0, 3%, 6%, 0.7);
+  --bittersweet-shimmer: hsl(0, 9%, 18%);
+
+
+
+  
+
+
+
+  --shadow-1: -4px 8px 24px hsla(0, 15%, 91%, 0.994);
+  --shadow-2: 0 16px 30px hsla(0, 100%, 99%, 0.919);
+  --shadow-3: 0 16px 40px hsla(0, 50%, 98%, 0.775);
+  --shadow-4: 0 25px 50px hsla(0, 14%, 88%, 0.876);
+  --shadow-5: 0 24px 80px hsla(0, 39%, 94%, 0.25);
+
+  --white-2:hsl(0, 20%, 3%);
+  
+  
+  
+}
 
 
 
@@ -459,7 +529,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: var( --bg-gradient-jet);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -791,14 +861,14 @@ main {
 
 .timeline-item-title {
   font-size: var(--fs-6);
-  line-height: 1.2;
+  line-height: 1.3;
   margin-bottom: 7px;
 }
 
 .timeline-list span {
   color: var(--vegas-gold);
   font-weight: var(--fw-400);
-  line-height: 1.9;
+  line-height: 1.6;
 }
 
 .timeline-item:not(:last-child)::before {
